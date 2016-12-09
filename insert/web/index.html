@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nahjolbalaghe Insert</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        body {
+            background-color: #222;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        body > .container {
+            margin-top: 3em;
+        }
+
+        body textarea {
+            max-width: 100%;
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="container" action="/submit" method="POST">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3>Insert</h3>
+                    </div>
+                    <div class="panel-body">                        
+                        <label for="title">Title</label>
+                        <input id="title" name="title" class="form-control" placeholder="Title of text" />
+                        <hr/>
+                        <label for="type">Type</label>
+                        <select class="form-control" id="type" name="type">
+                            <option value="0">
+                                Sermon
+                            </option>
+                            <option value="1">
+                                Letter
+                            </option>
+                            <option value="2">
+                                Wisdom
+                            </option>
+                        </select>
+                        <hr/>
+                        <label for="code">Code</label>
+                        <input id="code" name="code" class="form-control" placeholder="Code of text" />
+                        <hr/>
+                        <label for="arabic">Arabic text</label>
+                        <textarea rows="7" class="form-control" id="arabic" name="arabic" cols="5"></textarea>
+                        <hr/>
+                        <label for="persian">Persian text</label>
+                        <textarea rows="7" class="form-control" id="persian" name="persian"></textarea>                                                
+                    </div>
+                    <div class="panel-footer">
+                        <button class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
