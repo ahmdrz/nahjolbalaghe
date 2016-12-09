@@ -12,7 +12,7 @@ import (
 
 var db *database.Database
 var admin int = 83919508
-var token string = "314141809:AAEzok7Ra7fWYXK_q2fvIJVspHvV8Pue3N4"
+var token string = "314141809:AAEzok7Ra7fWYXK_q2fvIJVspHvV8Pue3N4" // in token dekorie ! talash nakonid !
 
 func main() {
 	log.Println("Opening database")
